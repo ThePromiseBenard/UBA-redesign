@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBA Internet Banking</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <!-- Nav bar containing menu items -->
+
+    <div class="md:flex fixed z-50 w-full  bg-lightred filter drop-shadow-lg ">
+        
+        <nav " class=" flex md:w-7/10 xl:w-full justify-between gap-10 items-center container mx-auto px-4 md:px-0 xl:px-2  py-6">
+            
+            <!-- logo -->
+
+            <img src="images/logo.png" class="w-24  cursor-pointer">
+
+
+            <button class="xl:hidden mobile-menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:w-14 md:h-14 text-uba" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                  </svg>
+            </button>
+
+            <!-- menu items -->
+        
+            <ul class="hidden xl:flex justify-around  xl:w-2/4 gap-1 xl:gap-5 text-base">
+
+                <li class="flex items-center gap-2 font-nunito capitalize cursor-pointer">
+                    <p>banking</p>
+                    <img src="/images/bx_bxs-down-arrow.png" class="w-2 xl:w-3" alt="">
+                </li>
+        
+                <li class="flex items-center gap-2 font-nunito capitalize cursor-pointer">
+                    <p>investors</p>
+                    <img src="/images/bx_bxs-down-arrow.png" class="w-2 xl:w-3" alt="">
+                </li>
+        
+                <li class="flex items-center gap-2 font-nunito capitalize cursor-pointer">
+                    <p>media</p>
+                    <img src="/images/bx_bxs-down-arrow.png" class="w-2 xl:w-3" alt="">
+                </li>
+        
+                <li class="flex items-center gap-2 font-nunito capitalize cursor-pointer">
+                    <p>UBA foundation</p>
+                    <img src="/images/bx_bxs-down-arrow.png" class="w-2 xl:w-3" alt="">
+                </li>
+        
+                <li class="flex items-center gap-2 font-nunito capitalize cursor-pointer">
+                    <p>about</p>
+                    <img src="/images/bx_bxs-down-arrow.png" class="w-2 xl:w-3" alt="">
+                </li>
+                
+            </ul>
+
+            <!-- internet banking button -->
+        
+            <button class="hidden xl:block border-solid border-2 shadow-md rounded text-uba font-bold py-3 px-6 border-uba capitalize cursor-pointer transition duration-500 ease-in-out hover:text-white hover:bg-uba">internet Banking</button>
+        
+           </nav>
+
+           <!-- mobile menu -->
+
+
+           <div class="xl:hidden sidebar  bg-uba boder-2 py-4 border-blue-900 text-white w-44 items-center justify-between  md:w-96 flex flex-col inset-y-0 right-0 absolute transform translate-x-full transition delay-200 ease-in-out h-screen">
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 close-mobile-menu  md:h-14 md:w-14 self-end" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+
+            <ul class="flex flex-col justify-start  xl:w-2/4 gap-5 md:gap-10  md:text-4xl">
+    
+                <li class="flex items-center gap-2 font-nunito capitalize cursor-pointer">
+                    <p>banking</p>
+                    
+                </li>
+        
+                <li class="flex items-center gap-2 font-nunito capitalize cursor-pointer">
+                    <p>investors</p>
+                    
+                </li>
+        
+                <li class="flex items-center gap-2 font-nunito capitalize cursor-pointer">
+                    <p>media</p>
+                    
+                </li>
+        
+                <li class="flex items-center gap-2 font-nunito capitalize cursor-pointer">
+                    <p>UBA foundation</p>
+                    
+                </li>
+        
+                <li class="flex items-center gap-2 font-nunito capitalize cursor-pointer">
+                    <p>about</p>
+                    
+                </li>
+                
+            </ul>
+    
+            <!-- internet banking button -->
+        
+            <button class=" border-solid border-2 md:text-4xl shadow-md bg-white rounded-lg text-uba font-bold py-2 px-2 md:py-6 md:px-6  border-uba capitalize cursor-pointer transition duration-500 ease-in-out">internet Banking</button>
+        
+    
+        </div>
+        
+    </div>
+    
+
+
+
+   
+   <!-- main body -->
+
+   <main class="md:space-y-40">
+
+    <!-- Hero section -->
+
+    <section class="px-3   bg-lightred  md:h-xl   grid md:justify-items-center gap-4 md:grid-cols-2 md:items-center md:pl-28 xl:pl-56 xl:pr-14">
+
+        <div class="space-y-10 flex flex-col mt-10 md:mt-0 ">
+            <h1 class="text-2xl text-center md:text-left md:text-3xl xl:text-5xl  font-bold font-libre leading-leading-head">Experience a better financial life with us</h1>
+            <p class="text-center md:text-left font-nunito text-sm md:text-base leading-relaxed font-thin">Come experience fast, swift and secure transactions anytime, anywhere.<br class="hidden md:block">
+                Online banking made for you.<br class="hidden md:block">
+                100% trusted platform.</p>
+
+            <button class="border-solid text-sm md:text-base  self-center md:self-start border-2 shadow-md transition duration-500 ease-in-out  rounded text-white bg-uba font-bold py-1 md:py-3 px-3 md:px-6 border-uba capitalize cursor-pointer hover:text-uba hover:bg-white">Create an account</button>
+
+        </div>
+
+
+        <img src="/images/hero-image.png" class="w-80 xl:w-8/12  md:h-auto justify-self-center mt-20"   alt="">
+
+    </section>
+
+
+    <!-- Financial report section -->
+
+    <section class="px-3  grid md:justify-items-center gap-4  md:grid-cols-2 md:items-center md:pl-28 xl:pl-56 xl:pr-14">
+
+
+        <img src="/images/pexels-anna-shvets-3727459.jpg" class="w-7/10  xl:w-11/12 justify-self-center md:justify-self-start"   alt="">
+
+        <div class="space-y-5 flex flex-col  justify-self-start row-start-1 md:col-start-2 ">
+            <h2 class="text-sm   self-center md:self-start  text-gray-400 font-bold capitalize cursor-pointer">REPORT</h2>
+            <h3 class="text-xl text-center md:text-left md:text-2xl xl:text-4xl   font-libre leading-relaxed">Financial report for Q3 2021</h3>
+            <p class="text-center md:text-left font-nunito text-sm md:text-base leading-relaxed font-thin md:pr-24">We make distinct financial report available to the public. With the steady rise in the banks population and also with the economic situation of the country, UBA has offered detailed annual reports to keep it’s customers intune with the financial progression of the bank.</p>
+
+            <a href="#" class="text-sm md:text-base  self-center md:self-start  text-uba font-bold capitalize cursor-pointer underline">View report</a>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- Spotlight News Section -->
+
+    <section class=" space-y-20">
+
+
+        <!-- Headline section -->
+
+        <div class="grid grid-cols-3 items-center container mx-auto gap-0 space-x-0 ">
+
+            <hr class="border-black px-10 md:px-10 justify-self-end w-7/10">
+
+            <h3 class="text-xl text-center md:text-2xl xl:text-4xl  font-libre leading-relaxed">Spotlight News</h3>
+
+            <hr class="border-black px-10 md:px-10 justify-self-start w-7/10">
+
+        </div>
+
+
+
+
+        <!-- cards section -->
+
+
+        <div class="grid md:grid-cols-2 xl:grid-cols-4  gap-6 container mx-auto w-7/10">
+
+            <!-- card 1 -->
+
+            <div class="shadow-lg rounded-lg space-y-5 xl:transform xl:hover:-translate-y-1 xl:hover:scale-110 transition duration-500 ease-in-out">
+                <img src="/images/first card.png" class="rounded-lg w-full" alt="">
+
+                <h3 class="px-6 text-base text-left xl:text-lg font-bold font-libre leading-relaxed">Headline sponsor of the 2021 french week</h3>
+
+                <p class="line-clamp-2 px-6 text-left font-nunito text-sm md:text-base leading-relaxed font-thin">We offer several programmes and aimed at creating positive impact through capital development</p>
+
+                <p class="pb-5"><a href="#" class=" px-6 text-sm  text-center text-uba capitalize cursor-pointer underline">Read</a></p>
+
+
+            </div>
+
+            <!-- card 2 -->
+
+            <div class="shadow-lg rounded-lg space-y-5 xl:transform xl:hover:-translate-y-1 xl:hover:scale-110 transition duration-500 ease-in-out">
+                <img src="/images/second card.png" class="rounded-lg w-full" alt="">
+
+                <h3 class="px-6 text-base text-left xl:text-lg font-bold font-libre leading-relaxed">UBA provides N5 billion for CD-19 relief support</h3>
+
+                <p class="line-clamp-2 px-6 text-left font-nunito text-sm md:text-base leading-relaxed font-thin">Our foundation had created an immense impact across africa by saving lives</p>
+
+                <p class="pb-5"><a href="#" class=" px-6 text-sm  text-center text-uba capitalize cursor-pointer underline">Read</a></p>
+
+
+            </div>
+
+            <!-- card 3 -->
+
+            <div class="shadow-lg rounded-lg space-y-5 xl:transform xl:hover:-translate-y-1 xl:hover:scale-110 transition duration-500 ease-in-out">
+                <img src="/images/third card.png" class="rounded-lg w-full" alt="">
+
+                <h3 class="px-6 text-base text-left xl:text-lg font-bold font-libre leading-relaxed">UBA Africa conversations 2021</h3>
+
+                <p class="line-clamp-2 px-6 text-left font-nunito text-sm md:text-base leading-relaxed font-thin">Africa global leaders celebrate africa at UBA Africa conversations 2021</p>
+
+                <p class="pb-5"><a href="#" class=" px-6 text-sm  text-center text-uba  capitalize cursor-pointer underline">Watch Video</a></p>
+
+
+            </div>
+
+            <!-- card 4 -->
+
+            <div class=" shadow-lg rounded-lg space-y-5 xl:transform  xl:hover:-translate-y-1 xl:hover:scale-110 transition duration-500 ease-in-out">
+                <img src="/images/foruth card.png" class="rounded-lg w-full" alt="">
+
+                <h3 class="px-6 text-base text-left xl:text-lg font-bold font-libre leading-relaxed">National Essay Competition 2021</h3>
+
+                <p class="line-clamp-2 px-6 text-left font-nunito text-sm md:text-base leading-relaxed font-thin">Topic: What is the role of technology in educating the African youth</p>
+
+                <p class="pb-5"><a href="#" class=" px-6 text-sm  text-center text-uba capitalize cursor-pointer underline">Read</a></p>
+
+            </div>
+
+            
+
+        </div>
+
+        <!-- see more paragraph -->
+
+
+        <p class="text-sm md:text-base mt-0 text-center text-gray-900 font-bold capitalize cursor-pointer underline"><a href="#">See more...</a></p>
+
+
+
+    </section>
+
+
+
+    <!-- More stories section -->
+
+    
+
+    <section class=" space-y-20 ">
+
+        <!-- More stories header -->
+
+
+        <div class="w-7/10 container mx-auto mt-16">
+                <h3 class="text-xl text-center md:text-left md:text-2xl xl:text-4xl   font-libre leading-relaxed">More stories</h3>
+
+        </div>
+
+
+
+
+        <!-- More stories cards -->
+
+        <div class="w-7/10 coantainer mx-auto xl:px-3 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+
+            <!-- card 1 -->
+
+            <div style="background-image: linear-gradient(rgba(4, 27, 43, 0.6),rgba(4, 27, 43, 0.6)),url('/images/United-Bank-For-Africa-Careers.jpg')" class=" bg-cover bg-center bg-no-repeat flex items-end xl:col-span-2 rounded-lg cursor-pointer  h-96">
+
+                <div class="space-y-5 flex flex-col rounded-b-lg px-6 py-6 ">
+                    <h2 class="text-sm self-center md:self-start  text-white font-bold capitalize cursor-pointer">REPORT</h2>
+                    <h3 class="text-base text-center md:text-left xl:text-xl   font-libre leading-relaxed text-white line-clamp-2">H1’21: UBA Records 33% YoY Profit Growth, Declares 20k Per Share Interim Dividend</h3>
+                    <p class="text-center md:text-left font-nunito text-sm md:text-base text-white leading-relaxed font-thin md:pr-24">United Bank for Africa (UBA) Plc showing impressive growth across all major income lines and performance indicators.</p>
+        
+                    <a href="#" class="text-sm md:text-base  self-center md:self-start  text-white capitalize cursor-pointer underline">View report</a>
+        
+                </div>
+
+            </div>
+
+
+             <!-- card 2 -->
+
+             <div style="background-image: linear-gradient(rgba(4, 27, 43, 0.6),rgba(4, 27, 43, 0.6)),url('/images/pexels-christina-morillo-1181725.jpg')" class=" bg-cover bg-center bg-no-repeat flex items-end rounded-lg h-96" >
+
+                 <div class="space-y-5 flex flex-col rounded-b-lg px-6 py-6 ">
+                     <h2 class="text-sm self-center md:self-start  text-white font-bold capitalize cursor-pointer">Investor relations</h2>
+                     <h3 class="text-base text-center md:text-left xl:text-xl   font-libre leading-relaxed text-white line-clamp-2">Risk Management: An amazing investors guide</h3>
+                     <p class="text-center md:text-left font-nunito text-sm md:text-base text-white leading-relaxed font-thin line-clamp-2">How much “runway” is there for risk assets?</p>
+
+                     <a href="#" class="text-sm md:text-base  self-center md:self-start  text-white capitalize cursor-pointer underline">View guide</a>
+
+                 </div>
+
+            </div>
+
+
+
+             <!-- card 3 -->
+
+             <div style="background-image: linear-gradient(rgba(4, 27, 43, 0.6),rgba(4, 27, 43, 0.6)),url('/images/uba-serria-leone-wins-innovative-bank.jpg')"  class="bg-card-3 bg-cover bg-center flex items-end bg-no-repeat rounded-lg h-96">
+
+                 <div class="space-y-5 flex flex-col rounded-b-lg px-6 py-6 ">
+                     <h2 class="text-sm self-center md:self-start  text-white font-bold capitalize cursor-pointer">Country in focus</h2>
+                     <h3 class="text-base text-center md:text-left xl:text-xl   font-libre leading-relaxed text-white line-clamp-2">UBA Sierra Leone Bags Best Innovative Bank</h3>
+                     <p class="text-center md:text-left font-nunito text-sm md:text-base text-white leading-relaxed font-thin  line-clamp-2">Uba is the standard of banking across the continent.</p>
+
+                     <a href="#" class="text-sm md:text-base  self-center md:self-start  text-white capitalize cursor-pointer underline">Read more</a>
+
+                 </div>
+
+            </div>
+
+
+             <!-- card 4 -->
+
+             <div style="background-image: linear-gradient(rgba(4, 27, 43, 0.6),rgba(4, 27, 43, 0.6)),url('/images/pexels-picha-stock-3894378.jpg')"  class="bg-card-4 bg-cover bg-center bg-no-repeat flex items-end rounded-lg h-96">
+
+                 <div class="space-y-5 flex flex-col rounded-b-lg px-6 py-6 ">
+                     <h2 class="text-sm self-center md:self-start  text-white font-bold capitalize cursor-pointer">Investor relations</h2>
+                     <h3 class="text-base text-center md:text-left xl:text-xl   font-libre leading-relaxed text-white line-clamp-2">Risk Management: An amazing investors guide</h3>
+                     <p class="text-center md:text-left font-nunito text-sm md:text-base text-white leading-relaxed font-thin  line-clamp-2">How much “runway” is there for risk assets?</p>
+
+                     <a href="#" class="text-sm md:text-base  self-center md:self-start  text-white capitalize cursor-pointer underline">View guide</a>
+
+                 </div>
+
+            </div>
+
+
+             <!-- card 5 -->
+
+             <div style="background-image: linear-gradient(rgba(4, 27, 43, 0.6),rgba(4, 27, 43, 0.6)),url('/images/uba-board-kennedy-uzoka.jpg')"  class="bg-card-5 bg-cover bg-center bg-no-repeat flex items-end rounded-lg h-96">
+
+                 <div class="space-y-5 flex flex-col rounded-b-lg px-6 py-6 ">
+                     <h2 class="text-sm self-center md:self-start  text-white font-bold capitalize cursor-pointer">Country in focus</h2>
+                     <h3 class="text-base text-center md:text-left xl:text-xl   font-libre leading-relaxed text-white line-clamp-2">UBA Sierra Leone Bags Best Innovative Bank</h3>
+                     <p class="text-center md:text-left font-nunito text-sm md:text-base text-white leading-relaxed font-thin  line-clamp-2">Uba is the standard of banking across the continent.</p>
+
+                     <a href="#" class="text-sm md:text-base  self-center md:self-start  text-white capitalize cursor-pointer underline">Read more</a>
+
+                 </div>
+
+            </div>
+
+
+             <!-- card 6 -->
+
+             <div style="background-image: linear-gradient(rgba(4, 27, 43, 0.6),rgba(4, 27, 43, 0.6)),url('/images/UBA-Background.jpg')"  class="bg-card-6 bg-cover bg-center bg-no-repeat flex items-end xl:col-span-2 rounded-lg h-96">
+
+                 <div class="space-y-5 flex flex-col rounded-b-lg px-6 py-6 ">
+                     <h2 class="text-sm self-center md:self-start  text-white font-bold capitalize cursor-pointer">REPORT</h2>
+                     <h3 class="text-base text-center md:text-left xl:text-xl   font-libre leading-relaxed text-white">H1’21: UBA Records 33% YoY Profit Growth, Declares 20k Per Share Interim Dividend</h3>
+                     <p class="text-center md:text-left font-nunito text-sm md:text-base text-white leading-relaxed font-thin md:pr-24">United Bank for Africa (UBA) Plc showing impressive growth across all major income lines and performance indicators.</p>
+
+                     <a href="#" class="text-sm md:text-base  self-center md:self-start  text-white capitalize cursor-pointer underline">View report</a>
+
+                 </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <!--        Discover More button-->
+
+        <div class="flex flex-col">
+            <button class=" border-solid text-sm md:text-base  self-center  border-2 border-gray-800 shadow-md transition duration-500 ease-in-out  rounded text-gray-800  font-bold py-1 px-3 md:px-6 2xl:border-gray-800 capitalize cursor-pointer hover:text-white hover:bg-gray-800">Discover more</button>
+        </div>
+
+
+    </section>
+
+
+
+       <!--  Double Experience section-->
+
+
+   <section class="h-97 md:bg-lightred flex items-center justify-center">
+
+       <div class="md:h-96 flex flex-col-reverse gap-0 md:flex-row items-center  xl:px-24 justify-center bg-gradient-to-r from-grade-100 via-grade-200 to-grade-300  rounded-xl filter drop-shadow-xl w-7/10 md:w-3/4">
+
+        <div class="md:w-1/2 xl:-mt-1 xl:ml-32  w-40 ">
+            <img src="/images/phone.png" alt="">
+        </div>
+
+        <div class="space-y-5 flex flex-col justify-self-start row-start-1 md:col-start-2 md:w-2/4">
+            <h3 class="text-xl text-center md:text-left md:text-2xl xl:text-4xl px-10 md:px-0 pt-1   font-libre leading-relaxed">Double the experience</h3>
+            <p class="text-center md:text-left font-nunito text-sm md:text-base leading-relaxed font-thin px-10 md:px-0 md:pr-24">Introducing the new UBA mobile app. run financial transaction from your comfort zone.
+                This app is available for android and iOS users.</p>
+
+            <div class="flex justify-center md:justify-start">
+                <img src="/images/apple.png" class="h-10 mt-2" alt="">
+                <img src="/images/google.png" alt="">
+                
+            </div>
+
+        </div>
+
+
+       </div>
+
+
+   </section>
+
+
+
+
+   <!-- Do Business Section -->
+
+   <section style="background-image: linear-gradient(rgba(4, 27, 43, 0.6),rgba(4, 27, 43, 0.6)),url('/images/UBA-Bussiness-Approach-3.jpg')" class="h-96 flex flex-col items-center bg-auto bg-top-4  xl:bg-auto bg-no-repeat justify-center">
+
+    <div class="space-y-5 flex flex-col items-center justify-self-center md:px-52 xl:px-96  ">
+
+        <h3 class="text-xl text-white text-center md:text-2xl xl:text-4xl font-libre leading-relaxed">Do Business With Ease</h3>
+        <p class="text-center text-white font-nunito text-sm md:text-base leading-relaxed font-thin px-5   ">Our customers are our priority and we are excited to have you on board. Welcome to a world of fast and seamless transactions.</p>
+
+        <div class="">
+            <button class="border-solid border-2 shadow-md rounded text-white bg-uba font-bold py-3 px-6 border-uba capitalize cursor-pointer transition duration-500 ease-in-out hover:text-uba hover:bg-lightred">Explore UBA</button>
+        </div>
+
+    </div>
+
+       
+   </section>
+
+
+
+   <!-- footer -->
+
+   <section class="xl:h-80 bg-footer flex flex-col gap-3">
+
+       <footer class="container mx-auto  grid grid-cols-2 md:grid-cols-3 xl:grid-cols-7 gap-y-10  md:gap-10 md:w-7/10 py-8">
+
+        <!-- footer logo -->
+
+        <div class="col-span-2 md:col-span-1 justify-self-center md:justify-self-start">
+            <img src="/images/logo.png" alt="">
+        </div>
+
+        <!-- column 1 -->
+
+        <div class=" text-white text-center  md:text-left font-nunito flex  flex-col gap-y-4 md:gap-y-8">
+
+            <!-- Column title -->
+            <h4 class="font-semibold">UBA Group</h4>
+
+            <!-- lists -->
+            <div class="flex flex-col gap-y-2 md:gap-y-4">
+                <p class="text-sm cursor-pointer">About us</p>
+                <p class="text-sm cursor-pointer">Careers</p>
+                <p class="text-sm cursor-pointer">UBA Foundation</p>
+                <p class="text-sm cursor-pointer">Awards</p>
+                <p class="text-sm cursor-pointer">Business focus</p>
+            </div>
+            
+        </div>
+
+        <!-- column 2 -->
+
+        <div class=" text-white text-center md:text-left font-nunito flex flex-col gap-y-4 md:gap-y-8">
+
+            <!-- Column title -->
+            <h4 class="font-semibold">Investors</h4>
+
+            <!-- lists -->
+            <div class="flex flex-col gap-y-2 md:gap-y-4">
+                <p class="text-sm cursor-pointer">Global Investor</p>
+                <p class="text-sm cursor-pointer">Financial services</p>
+                <p class="text-sm cursor-pointer">Analyst report</p>
+                <p class="text-sm cursor-pointer">Awards</p>
+                <p class="text-sm cursor-pointer">Business focus</p>
+            </div>
+            
+        </div>
+
+
+        <!-- column 3 -->
+
+        <div class=" text-white text-center md:text-left font-nunito flex flex-col gap-y-4 md:gap-y-8">
+
+            <!-- Column title -->
+            <h4 class="font-semibold">Quick Links</h4>
+
+            <!-- lists -->
+            <div class="flex flex-col gap-y-2 md:gap-y-4">
+                <p class="text-sm cursor-pointer">Initiatives</p>
+                <p class="text-sm cursor-pointer">Event</p>
+                <p class="text-sm cursor-pointer">The brand</p>
+                <p class="text-sm cursor-pointer">Awards</p>
+                <p class="text-sm cursor-pointer">Business focus</p>
+            </div>
+            
+        </div>
+
+
+        <!-- column 4 -->
+
+        <div class=" text-white text-center md:text-left font-nunito flex flex-col gap-y-4 md:gap-y-8">
+
+            <!-- Column title -->
+            <h4 class="font-semibold">Help & Support</h4>
+
+            <!-- lists -->
+            <div class="flex flex-col gap-y-2 md:gap-y-4">
+                <p class="text-sm cursor-pointer">Contact us</p>
+                <p class="text-sm cursor-pointer">Fraud Awareness</p>
+                <p class="text-sm cursor-pointer">FAQ</p>
+                <p class="text-sm cursor-pointer">Awards</p>
+                <p class="text-sm cursor-pointer">Business focus</p>
+            </div>
+            
+        </div>
+
+        <!-- last colum for form -->
+
+        <div class=" text-white text-center col-span-2 md:text-left font-nunito flex flex-col md:col-span-1 xl:col-span-2 md:gap-y-8">
+
+            <!-- Column title -->
+            <h4 class="font-semibold">Connect</h4>
+
+            <!-- lists -->
+            <div class="flex flex-col gap-y-2">
+                <p class="text-sm">Sign up for a newsletter</p>
+
+                <!-- form -->
+
+                <form class="flex flex-wrap md:flex-col xl:flex-row justify-center md:justify-start gap-1 ">
+                    <div>
+                        <input type="email" placeholder="Enter your email address" class="py-2 md:w-full  rounded-md px-6 text-sm text-black focus: outline-none">
+                    </div>
+
+                    <div class="">
+                        <button class="border-solid border-2 shadow-md rounded md:w-full text-white font-nunito bg-uba font-bold py-1.5 px-6 md:py-2 xl:py-1.5 xl:px-6 text-sm border-uba capitalize cursor-pointer transition duration-500 ease-in-out hover:text-uba hover:bg-lightred">Join us</button>
+                    </div>
+            
+                </form>
+                
+            </div>
+            
+        </div>
+
+
+       </footer>
+
+       <!-- copyrights -->
+       <span class="text-white text-center font-nunito container mx-auto">&copy; UBA Groups 2021</span>
+
+   </section>
+
+    
+
+
+
+   </main>
+
+
+   <script src="menu.js"></script>
+
+
+
+    
+</body>
+</html>
